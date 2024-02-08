@@ -17,4 +17,10 @@ public class Planet {
         xxPos=p.xxPos;yyPos=p.yyPos;xxVel=p.xxVel;
         yyVel=p.yyVel;mass=p.mass;imgFileName=p.imgFileName;
     }
+
+    public double calcDistance(Planet p){
+        double absx=Math.abs(xxPos-p.xxPos);
+        double absy=Math.abs(yyPos-p.yyPos);
+        return Math.sqrt(absx*absx+absy*absy);
+    }
 }
