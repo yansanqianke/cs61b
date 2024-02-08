@@ -48,5 +48,13 @@ public class NBody {
             StdDraw.pause(10);
             t+=dt;         
         }
+
+        StdOut.printf("%d\n", ap.length);
+        StdOut.printf("%.2e\n", r);
+        for (int i = 0; i < ap.length; i++) {
+            StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
+                        ap[i].xxPos, ap[i].yyPos, ap[i].xxVel,
+                        ap[i].yyVel, ap[i].mass, ap[i].imgFileName);   
+        }
     }
 }
