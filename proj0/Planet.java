@@ -28,5 +28,15 @@ public class Planet {
         double dis=calcDistance(p);
         return G*mass*p.mass/(dis*dis);
     }
-    
+
+    public double calcForceExertedByX(Planet p){
+        double r=calcDistance(p);
+        double dx=p.xxPos-xxPos;
+        return calcForceExertedBy(p)*dx/r;
+    }
+    public double calcForceExertedByY(Planet p){
+        double r=calcDistance(p);
+        double dy=p.yyPos-yyPos;
+        return calcForceExertedBy(p)*dy/r;
+    }
 }
