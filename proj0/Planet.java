@@ -54,4 +54,12 @@ public class Planet {
                 allYForce+=calcForceExertedByY(ap[i]);
         return allYForce;
     }
+
+    public void update(double dt,double fx,double fy){
+        double ax=fx/mass,ay=fy/mass;
+        xxVel=xxVel+dt*ax;
+        yyVel=yyVel+dt*ay;
+        xxPos=xxPos+xxVel*dt;
+        yyPos=yyPos+yyVel*dt;
+    }
 }
