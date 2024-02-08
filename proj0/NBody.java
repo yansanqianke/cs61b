@@ -16,4 +16,18 @@ public class NBody {
         }
         return ap;
     }
+
+    public static void main(String[] args){
+        double T=Double.parseDouble(args[0]);
+        double dt=Double.parseDouble(args[1]);
+        String filename=args[2];
+        double r=readRadius(filename);
+        Planet[] ap=readPlanets(filename);
+        StdDraw.setScale(-r, r);
+        StdDraw.clear();
+        StdDraw.picture(0,0,"images/starfield.jpg");
+        for(int i=0;i<ap.length;i++)
+            ap[i].draw();
+        StdDraw.show();
+    }
 }
