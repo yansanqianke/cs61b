@@ -39,4 +39,19 @@ public class Planet {
         double dy=p.yyPos-yyPos;
         return calcForceExertedBy(p)*dy/r;
     }
+
+    public double calcNetForceExertedByX(Planet[] ap){
+        double allXForce=0;
+        for(int i=0;i<ap.length;i++)
+            if(! ap[i].equals(this))
+                allXForce+=calcForceExertedByX(ap[i]);
+        return allXForce;
+    }
+    public double calcNetForceExertedByY(Planet[] ap){
+        double allYForce=0;
+        for(int i=0;i<ap.length;i++)
+            if(! ap[i].equals(this))
+                allYForce+=calcForceExertedByY(ap[i]);
+        return allYForce;
+    }
 }
