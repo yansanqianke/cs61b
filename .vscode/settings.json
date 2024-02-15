@@ -1,0 +1,5 @@
+{
+    "java.project.referencedLibraries": [
+        "library-sp18/javalib/*.jar" // 此处可以指向绝对路径
+    ]
+}
