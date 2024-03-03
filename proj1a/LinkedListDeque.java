@@ -62,6 +62,7 @@ public class LinkedListDeque<T> {
         node tep=pointer.next;
         pointer.next=tep.next;
         tep.next.pre=pointer;
+        size--;
         return tep.data;
     }
 
@@ -70,6 +71,7 @@ public class LinkedListDeque<T> {
         node tep=pointer.pre;
         pointer.pre=tep.pre;
         tep.pre.next=pointer;
+        size--;
         return tep.data;
     }
 
