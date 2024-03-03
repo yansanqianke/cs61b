@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayDequeTest",
+            "request": "launch",
+            "mainClass": "ArrayDequeTest",
+            "projectName": "proj1a_f2b1b8e5"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

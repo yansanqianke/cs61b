@@ -2,7 +2,7 @@ public class ArrayDeque<T> {
     private class arry_circle {
         T[] a = (T[]) new Object[8];
         int head=0;
-        int tail=0;
+        int tail=1;
         int len=8;
         
         private int addIndex(int index,int step){
