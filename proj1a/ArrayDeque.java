@@ -32,6 +32,7 @@ public class ArrayDeque<T> {
                 newA[newTail]=a[i];
                 newTail++;
             }
+            a=newA;
             head=newHead;
             tail=newTail;
             len*=2;
@@ -45,6 +46,7 @@ public class ArrayDeque<T> {
                 newA[newTail]=a[i];
                 newTail++;
             }
+            a=newA;
             head=newHead;
             tail=newTail;
             len/=2;
