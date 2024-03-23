@@ -20,4 +20,17 @@ public class Palindrome {
         else
             return false;
     }
+
+    public boolean isPalindrome(String word, CharacterComparator cc){
+        Deque<Character> d=wordToDeque(word);
+        return innerNewIsPalindrome(d,cc);
+    }
+    private boolean innerNewIsPalindrome(Deque<Character> dq,CharacterComparator cc){
+        if(dq.size()==0 || dq.size()==1)
+            return true;
+        if(cc.equalChars(dq.removeFirst(),dq.removeLast()))
+            return innerIsPalindrome(dq);
+        else
+            return false;
+    }
 }
