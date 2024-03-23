@@ -8,6 +8,16 @@ public class Palindrome {
     }
 
     public boolean isPalindrome(String word){
-        return true;
+        Deque<Character> d=wordToDeque(word);
+        return innerIsPalindrome(d);
+    }
+
+    private boolean innerIsPalindrome(Deque<Character> dq){
+        if(dq.size()==0 || dq.size()==1)
+            return true;
+        if(dq.removeFirst()==dq.removeLast())
+            return innerIsPalindrome(dq);
+        else
+            return false;
     }
 }

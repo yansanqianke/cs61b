@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PalindromeFinder",
+            "request": "launch",
+            "mainClass": "PalindromeFinder",
+            "projectName": "proj1b_f2b1b8e6"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
