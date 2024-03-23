@@ -1,0 +1,12 @@
+{
+    "cmake.configureOnOpen": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\code\\class\\cs61b\\library-sp18\\javalib\\algs4.jar",
+        "d:\\code\\class\\cs61b\\library-sp18\\javalib\\hamcrest-core-1.3.jar",
+        "d:\\code\\class\\cs61b\\library-sp18\\javalib\\jh61b.jar",
+        "d:\\code\\class\\cs61b\\library-sp18\\javalib\\junit-4.12.jar",
+        "d:\\code\\class\\cs61b\\library-sp18\\javalib\\stdlib.jar",
+        "d:\\code\\class\\cs61b\\library-sp18\\javalib\\stdlib-package.jar"
+    ]
+}
